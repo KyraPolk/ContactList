@@ -20,6 +20,12 @@ function App() {
   return (
     <>
       <div>
+        <h1>Contact List</h1>
+        {state.map((contact) => {
+          return (
+            <h4 key={contact.name}>{contact.name}</h4>
+          )
+        })}
       </div>
     </>
   )
